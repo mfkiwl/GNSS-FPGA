@@ -1,0 +1,8 @@
+# exclude everything
+*
+
+# exception to the rule
+!.gitignore
+!_vitis\_correlator\src\
+!_HLS\src\
+!_HLS\dotproduct_integer_axis\vivado\last_design.xsa
