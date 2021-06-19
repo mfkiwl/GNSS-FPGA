@@ -1,8 +1,32 @@
-# exclude everything
-*
+_HLS/dotproduct_float_axis
+_HLS/mixcarr_fixed_axis
+_HLS/vitis_hls.log
+_HLS/vivado_hls.log
+_HLS/dotproduct_integer_axis/.apc
+_HLS/dotproduct_integer_axis/.settings
+_HLS/dotproduct_integer_axis/solution1
+_HLS/dotproduct_integer_axis/.cproject
+_HLS/dotproduct_integer_axis/.project
+_HLS/dotproduct_integer_axis/.vivado_hls_log_all.xml
+_HLS/dotproduct_integer_axis/vivado_hls.app
+_HLS/dotproduct_integer_axis/vivado/
+# !_HLS/dotproduct_integer_axis/vivado/last_design.xsa
 
-# exception to the rule
-!.gitignore
-!_vitis\_correlator\src\
-!_HLS\src\
-!_HLS\dotproduct_integer_axis\vivado\last_design.xsa
+_vitis/_correlator/_ide
+_vitis/_correlator/Debug
+_vitis/_correlator/.cproject
+_vitis/_correlator/.project
+_vitis/_correlator/_correlator.prj
+_vitis/.metadata
+_vitis/hello
+_vitis/IDE.log
+_vitis/__processor_pl
+_vitis/_sdr
+_vitis/webtalk
+_vitis/_correlator_system
+_vitis/hello_system
+_vitis/__processor
+_vitis/RemoteSystemsTempFiles
+_vitis/_sdr_system
+
+_vivado
