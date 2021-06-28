@@ -1,0 +1,379 @@
+INFO: [HLS 200-10] Running 'C:/opt/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'andre' on host 'iudex-dell' (Windows NT_amd64 version 6.2) on Mon May 31 16:50:51 +0100 2021
+INFO: [HLS 200-10] In directory 'D:/andre/Documents/tese/projeto/_HLS_'
+Sourcing Tcl script 'D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/cosim.tcl'
+INFO: [HLS 200-1510] Running: open_project Hw 
+INFO: [HLS 200-10] Opening project 'D:/andre/Documents/tese/projeto/_HLS_/Hw'.
+INFO: [HLS 200-1510] Running: set_top axis_float_macc 
+INFO: [HLS 200-1510] Running: add_files axis_float_macc.cpp 
+INFO: [HLS 200-10] Adding design file 'axis_float_macc.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb tb_axis_float_macc.cpp 
+INFO: [HLS 200-10] Adding test bench file 'tb_axis_float_macc.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z010-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all -rtl vhdl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/opt/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_axis_float_macc.cpp
+   Compiling apatb_axis_float_macc_util.cpp
+   Compiling axis_float_macc.cpp_pre.cpp.tb.cpp
+   Compiling tb_axis_float_macc.cpp_pre.cpp.tb.cpp
+   Compiling apatb_axis_float_macc_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+hw: -1.7458 (0)
+hw: -1.8422 (0)
+hw: 4.876 (1)
+hw: -1.7458 (sw: -1.7458) 0
+hw: -1.8422 (sw: -1.8422) 0
+hw: 4.876 (sw: 4.876) 0
+The maximum depth reached by any of the 2 hls::stream() instances in the design is 0
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_vivado_gen_ip.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1148.699 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/opt/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'axis_float_macc_ap_fmul_2_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+create_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1148.699 ; gain = 0.000
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axis_float_macc_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axis_float_macc_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'FAcc'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'FAcc'...
+INFO: [Common 17-206] Exiting Vivado at Mon May 31 16:52:03 2021...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-322] Starting VHDL simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\andre\Documents\tese\projeto\_HLS_\Hw\solution1\sim\vhdl>set PATH= 
+
+D:\andre\Documents\tese\projeto\_HLS_\Hw\solution1\sim\vhdl>call C:/opt/Xilinx/Vivado/2020.2/bin/xelab xil_defaultlib.apatb_axis_float_macc_top glbl -prj axis_float_macc.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm  -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib "ieee_proposed=./ieee_proposed" -s axis_float_macc -debug wave 
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/opt/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_axis_float_macc_top glbl -prj axis_float_macc.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm -L floating_point_v7_0_18 -L floating_point_v7_1_11 --lib ieee_proposed=./ieee_proposed -s axis_float_macc -debug wave 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/ip/xil_defaultlib/axis_float_macc_ap_fmul_2_max_dsp_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_float_macc_ap_fmul_2_max_dsp_32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/ip/xil_defaultlib/FAcc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FAcc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/AESL_axi_s_strm_in_V.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_s_strm_in_V'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/AESL_axi_s_strm_out_V.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_s_strm_out_V'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/axis_float_macc.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apatb_axis_float_macc_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/axis_float_macc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axis_float_macc'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/axis_float_macc_facc_32ns_32ns_1ns_32_6_no_dsp_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axis_float_macc_facc_32ns_32ns_1ns_32_6_no_dsp_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/axis_float_macc_fmul_32ns_32ns_32_4_max_dsp_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axis_float_macc_fmul_32ns_32ns_32_4_max_dsp_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/axis_float_macc_localmem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axis_float_macc_localmem_ram'
+INFO: [VRFC 10-3107] analyzing entity 'axis_float_macc_localmem'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/axis_float_macc_regslice_both.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axis_float_macc_regslice_both'
+INFO: [VRFC 10-3107] analyzing entity 'axis_float_macc_regslice_both_w1'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_exp_table...
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_11.floating_point_v7_1_11_pkg
+Compiling package floating_point_v7_1_11.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module work.glbl
+Compiling architecture rtl of entity xil_defaultlib.axis_float_macc_localmem_ram [axis_float_macc_localmem_ram_def...]
+Compiling architecture arch of entity xil_defaultlib.axis_float_macc_localmem [axis_float_macc_localmem_default]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=7,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=16,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=24,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=17,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=48,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_11.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.fix_mult [\fix_mult(c_xdevicefamily="zynq"...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=32,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=14,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_11.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_mult [\flt_mult(c_xdevicefamily="zynq"...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.axis_float_macc_ap_fmul_2_max_ds...
+Compiling architecture arch of entity xil_defaultlib.axis_float_macc_fmul_32ns_32ns_32_4_max_dsp_1 [axis_float_macc_fmul_32ns_32ns_3...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=5)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=67)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=66,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq [\compare_eq(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=2,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=4,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=23,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_11.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=10,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay_s [\delay_s(width=10,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=64,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=64)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=2)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.shift_msb_first [\shift_msb_first(a_width=24,resu...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_accum_flt_to_fix [\flt_accum_flt_to_fix(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=3)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=3)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=17,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=6,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_accum_bit_encode [\flt_accum_bit_encode(c_xdevicef...]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=8,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.flt_accum_bit_encode [\flt_accum_bit_encode(c_xdevicef...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=65)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=65,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_11.shift_msb_first [\shift_msb_first(a_width=65,resu...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110010010110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110000111100")(0...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=9,length=0,fast_inp...]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_log_addsub [\flt_log_addsub(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_11.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_11.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=3,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=32)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_11.delay [\delay(width=5)\]
+Compiling architecture synth of entity floating_point_v7_1_11.flt_accum [\flt_accum(c_xdevicefamily="zynq...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11_viv [\floating_point_v7_1_11_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_11.floating_point_v7_1_11 [\floating_point_v7_1_11(c_xdevic...]
+Compiling module xil_defaultlib.FAcc
+Compiling architecture arch of entity xil_defaultlib.axis_float_macc_facc_32ns_32ns_1ns_32_6_no_dsp_1 [axis_float_macc_facc_32ns_32ns_1...]
+Compiling architecture behav of entity xil_defaultlib.axis_float_macc_regslice_both [\axis_float_macc_regslice_both(d...]
+Compiling architecture behav of entity xil_defaultlib.axis_float_macc [axis_float_macc_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_strm_out_V [aesl_axi_s_strm_out_v_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_axi_s_strm_in_V [aesl_axi_s_strm_in_v_default]
+Compiling architecture behav of entity xil_defaultlib.apatb_axis_float_macc_top
+Built simulation snapshot axis_float_macc
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/xsim.dir/axis_float_macc/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May 31 16:52:35 2021...
+
+****** xsim v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/axis_float_macc/xsim_script.tcl
+# xsim {axis_float_macc} -autoloadwcfg -tclbatch {axis_float_macc.tcl}
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source axis_float_macc.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set strm_out_group [add_wave_group strm_out(axis) -into $coutputgroup]
+## add_wave /apatb_axis_float_macc_top/AESL_inst_axis_float_macc/strm_out_V_TREADY -into $strm_out_group -color #ffff00 -radix hex
+## add_wave /apatb_axis_float_macc_top/AESL_inst_axis_float_macc/strm_out_V_TVALID -into $strm_out_group -color #ffff00 -radix hex
+## add_wave /apatb_axis_float_macc_top/AESL_inst_axis_float_macc/strm_out_V_TDATA -into $strm_out_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set strm_in_group [add_wave_group strm_in(axis) -into $cinputgroup]
+## add_wave /apatb_axis_float_macc_top/AESL_inst_axis_float_macc/strm_in_V_TREADY -into $strm_in_group -color #ffff00 -radix hex
+## add_wave /apatb_axis_float_macc_top/AESL_inst_axis_float_macc/strm_in_V_TVALID -into $strm_in_group -color #ffff00 -radix hex
+## add_wave /apatb_axis_float_macc_top/AESL_inst_axis_float_macc/strm_in_V_TDATA -into $strm_in_group -radix hex
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_axis_float_macc_top/AESL_inst_axis_float_macc/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_axis_float_macc_top/AESL_inst_axis_float_macc/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_axis_float_macc_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_axis_float_macc_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_axis_float_macc_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_axis_float_macc_top/ap_c_n_tvout_trans_num_strm_out_V -into $tb_simstatus_group -radix hex
+## add_wave /apatb_axis_float_macc_top/ap_c_n_tvin_trans_num_strm_in_V -into $tb_simstatus_group -radix hex
+## add_wave /apatb_axis_float_macc_top/LENGTH_strm_out_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_axis_float_macc_top/LENGTH_strm_in_V -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_strm_out_group [add_wave_group strm_out(axis) -into $tbcoutputgroup]
+## add_wave /apatb_axis_float_macc_top/strm_out_V_TREADY -into $tb_strm_out_group -color #ffff00 -radix hex
+## add_wave /apatb_axis_float_macc_top/strm_out_V_TVALID -into $tb_strm_out_group -color #ffff00 -radix hex
+## add_wave /apatb_axis_float_macc_top/strm_out_V_TDATA -into $tb_strm_out_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_strm_in_group [add_wave_group strm_in(axis) -into $tbcinputgroup]
+## add_wave /apatb_axis_float_macc_top/strm_in_V_TREADY -into $tb_strm_in_group -color #ffff00 -radix hex
+## add_wave /apatb_axis_float_macc_top/strm_in_V_TVALID -into $tb_strm_in_group -color #ffff00 -radix hex
+## add_wave /apatb_axis_float_macc_top/strm_in_V_TDATA -into $tb_strm_in_group -radix hex
+## save_wave_config axis_float_macc.wcfg
+## run all
+Note: simulation done!
+Time: 735 ns  Iteration: 1  Process: /apatb_axis_float_macc_top/generate_sim_done_proc  File: D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/axis_float_macc.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 735 ns  Iteration: 1  Process: /apatb_axis_float_macc_top/generate_sim_done_proc  File: D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/sim/vhdl/axis_float_macc.autotb.vhd
+$finish called at time : 735 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon May 31 16:52:42 2021...
+INFO: [COSIM 212-316] Starting C post checking ...
+hw: -1.7458 (0)
+hw: -1.8422 (0)
+hw: 4.876 (1)
+hw: -1.7458 (sw: -1.7458) 0
+hw: -1.8422 (sw: -1.8422) 1.19209e-007
+hw: 4.876 (sw: 4.876) 0
+The maximum depth reached by any of the 2 hls::stream() instances in the design is 0
+ERROR: [COSIM 212-361] C TB post check failed, nonzero return value '1'.
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 107.568 seconds; current allocated memory: 225.632 MB.
+command 'ap_source' returned error code
+    while executing
+"source D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/cosim.tcl"
+    invoked from within
+"hls::main D:/andre/Documents/tese/projeto/_HLS_/Hw/solution1/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"

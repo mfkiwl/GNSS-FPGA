@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="axis_short_float_macc.cpp" path="D:\andre\Documents\tese\projeto\_HLS\src\axis_short_float_macc.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_axis_short_float_macc.cpp" path="D:\andre\Documents\tese\projeto\_HLS\src\tb_axis_short_float_macc.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
