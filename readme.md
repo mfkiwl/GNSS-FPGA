@@ -17,10 +17,3 @@ Block Design
 </summary>
 <img src="./hardware/tracking.VIVADO/Tracking.png">
 </details>
-
-<details>
-<summary>
-Speedup
-</summary>
-<img src="./hardware/tracking.VIVADO/Speedup.png">
-</details>
